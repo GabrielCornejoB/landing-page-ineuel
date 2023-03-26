@@ -16,7 +16,7 @@
     <nav class="navigation">
         <a href="#" class="logo">INEUEL</a>
         <div class="nav-links">
-            <a href="#" class="nav-link">INICIO</a>
+            <a href="#" class="nav-link active">INICIO</a>
             <a href="#" class="nav-link">CONSEJOS</a>
             <a href="#" class="nav-link">RUTAS</a>
             <a href="#" class="nav-link">APOYOS</a>
@@ -157,7 +157,7 @@
         });
         function send() {
             let text = document.getElementById('opinion').value;
-            alert(current + " " + text);
+            alert("Calificación: " + current + "\nMensaje: " + text);
             document.getElementById('opinion').value = "";
         }
     </script>
