@@ -122,7 +122,7 @@ p {
 .info .card {
     display: flex;
     flex-direction: row;
-    padding: 25px;
+    padding: 50px;
     background: var(--light-gray);
     border-radius: 25px;
 }
@@ -130,7 +130,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    width: 50%;
+    width: 40%;
 }
 .info-image {
     display: flex;
@@ -141,4 +141,39 @@ p {
 .info-image img {
     height: 100%;
     width: auto;
+}
+
+.connect {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.connect .description {
+    margin-top: 75px;
+    margin-bottom: 125px;
+}
+.connect .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.connect .socials .card {
+    background: var(--light-gray);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.connect .socials .card .button {
+    font-weight: 600;
+    color: var(--white);
+    text-decoration: none;
+    background: var(--dark-blue);
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100%;
 }
