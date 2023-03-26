@@ -97,12 +97,12 @@ p {
 }
 .services .description {
     margin-top: 75px;
-    margin-bottom: 150px;
+    margin-bottom: 75px;
 }
 .services .items {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
 }
 .services .items .item {
@@ -152,7 +152,7 @@ p {
 }
 .connect .description {
     margin-top: 75px;
-    margin-bottom: 125px;
+    margin-bottom: 75px;
 }
 .connect .socials {
     display: flex;
@@ -176,4 +176,94 @@ p {
     padding: 10px 0;
     border-radius: 5px;
     width: 100%;
+    transition: 0.4s;
+}
+.connect .socials .card .button:hover {
+    background: var(--blue);
+}
+.opinions {
+    background: var(--light-gray);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.opinions .cards {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+.opinions .cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 250px;
+    background: var(--white);
+    border-radius: 15px;
+}
+.opinions .cards .card span {
+    font-size: 5rem;
+}
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--dark-blue);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.rating .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    background: var(--light-gray);
+    width: 100%;
+    gap: 25px;
+}
+.rating .form .button-star {
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: none;
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: var(--dark-blue);
+    transition: 0.4s;
+}
+.rating .form .button-star:hover {
+    color: var(--blue);
+}
+
+.rating .form  textarea {
+    width: 400px;
+    resize: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+.rating .form  .submit-button {
+    color: var(--white);
+    background: var(--dark-blue);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 422px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.rating .form  .submit-button:hover {
+    background: var(--blue);
 }

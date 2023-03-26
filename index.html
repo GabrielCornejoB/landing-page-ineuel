@@ -100,10 +100,69 @@
         </div>
     </div>
     <div class="pc opinions">
-
+        <div class="title">
+            <h6>TESTIMONIOS</h6>
+            <h2>Lo que opinan nuestros usuarios</h2>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <span class="material-symbols-outlined">account_circle</span>
+                <h3>Luisa Alvarez</h3>
+                <p>“Desde la primera vez que usé el<br>portal aprendí muchas cosas y<br>ya casi no llego tarde jeje”</p>
+            </div>
+            <div class="card">
+                <span class="material-symbols-outlined">account_circle</span>
+                <h3>Marcelo Tamayo</h3>
+                <p>"Hay mucha información muy<br>importante que desconocía, <br> ojalá haberla sabido antes."</p>
+            </div>
+            <div class="card">
+                <span class="material-symbols-outlined">account_circle</span>
+                <h3>Sofia Arango</h3>
+                <p>"Hay mucha información muy<br>importante que desconocía, <br> ojalá haberla sabido antes."</p>
+            </div>
+        </div>
     </div>
+    <div class="pc rating">
+        <div class="form">
+            <div class="title">
+                <h6>CALIFICANOS</h6>
+                <h2>¿Cómo está siendo tu experiencia?</h2>
+            </div>
+            <div class="stars">
+                <button class="button-star">&#9734;</button>
+                <button class="button-star">&#9734;</button>
+                <button class="button-star">&#9734;</button>
+                <button class="button-star">&#9734;</button>
+                <button class="button-star">&#9734;</button>
+            </div>
+            <textarea name="opinion" id="opinion" rows="5" placeholder="Compartenos tu opinión :)" required></textarea>
+            <button onclick="send()" type="submit" class="submit-button">ENVIAR</button>
+        </div>
+    </div>
+    <script>
+        const stars = document.querySelectorAll(".button-star");
+        let current = 0;
+        stars.forEach((star, i) => {
+            star.onclick = function() {
+                current = i+1;
+                stars.forEach((star, j) => {
+                    if (current >= j+1) {
+                        star.innerHTML = '&#9733;';
+                    }
+                    else {
+                        star.innerHTML = '&#9734;';
+                    }
+                });
+            }
+        });
+        function send() {
+            let text = document.getElementById('opinion').value;
+            alert(current + " " + text);
+            document.getElementById('opinion').value = "";
+        }
+    </script>
     <footer>
-        
+
     </footer>
 </body>
 </html>
