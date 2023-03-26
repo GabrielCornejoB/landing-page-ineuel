@@ -1,0 +1,102 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+header{
+	font-family: sans-serif;
+	background: lightblue;
+	height: 100px;
+	width: 100%;
+	margin: 0px;
+	text-align: center;
+	line-height: 100px;
+	color: black;
+	border-bottom: 1px solid black;
+}
+body{
+	font-family: arial,helvetica;
+	background: #F3F5F5;	
+}
+.menu{
+	list-style: none;
+	padding: 0px;
+	background:white;
+	width: 100%;
+	max-width: 1365px;
+	margin:auto;
+	border-bottom:1px solid black; 
+	height: 50px;
+	text-align: center;
+}
+.menu li a{
+	text-decoration:none;
+	color: black;
+	padding: 20px;
+	display: block;
+}
+.menu li{
+	display: inline-block;
+	text-align:center;
+}
+.menu li a:hover{
+	background:lightblue;
+	color: black;
+	transition: .5s all;
+}
+.contenedor{
+	padding-top: 150px;
+	width: 90%;
+	max-width: 900px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.tabla{
+	width: 33%; 
+	height: 550px;
+	margin: auto;
+	border: 1px solid #343759;
+	border-radius: 4px;
+	box-shadow: 0px 0px 4px 0px #343759;
+	padding: 60px;
+	text-align: center;
+	flex-grow: 1;
+	color: #343759;
+}
+.tabla>h2{
+	font-size: 30px;
+	margin-bottom: 35px;
+}
+.tabla img{
+	width: 100px;
+	margin-bottom: 35px;
+}
+.tabla>h3{
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.tabla>p{
+	display:block;
+	margin-bottom: 20px;
+}
+.boton{
+	display: inline-block;
+	width: 150px;
+	padding: 12px;
+	background: #a5f059;
+	text-decoration: none;
+	color: blue;
+	border-radius: 100px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600px;
+	margin: auto;
+}
+.tabla:hover{
+	background: lightblue;
+	color: #f1f1f2;
+	transition: 1s all;
+	transform:scale(1.1);
+	cursor: pointer;
+}

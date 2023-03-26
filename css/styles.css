@@ -27,6 +27,7 @@ p {
     padding: 0 50px;
     position: fixed;
     width: 100vw;
+    height: 89px;
     box-sizing: border-box;
 }
 .navigation .logo {
