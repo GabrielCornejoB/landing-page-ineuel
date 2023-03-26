@@ -1,7 +1,8 @@
 :root {
+    --light-gray: #E6EBED;
     --gray: #7E7D7D;
     --white: #ffffff;
-    --light-blue: #EEF8FB;
+    --light-blue: #D9F1F6;
     --blue: #6DDAF2;
     --dark-blue: #21A2BF;
 }
@@ -12,6 +13,9 @@
 }
 html {
     font-size: 16px;
+}
+p {
+    color: var(--gray);
 }
 
 .navigation {
@@ -54,11 +58,12 @@ html {
     flex-direction: row;
     box-sizing: border-box;
     align-items: center;
+    justify-content: space-between;
 }
 .hero .hero-text {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 50%;
     gap: 20px;
 }
 .hero .hero-text h1 {
@@ -66,4 +71,74 @@ html {
 }
 .hero .hero-text p {
     color: var(--gray)
+}
+.hero .hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.title h2 {
+    font-size: 2rem;
+}
+.title h6 {
+    font-size: 0.75rem;
+    color: var(--dark-blue);
+}
+.services .description {
+    margin-top: 75px;
+    margin-bottom: 150px;
+}
+.services .items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.services .items .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.services .items .item span {
+    font-size: 5rem;
+    color: var(--dark-blue);
+    background: var(--light-blue);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.info .card {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    background: var(--light-gray);
+    border-radius: 25px;
+}
+.info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 50%;
+}
+.info-image {
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    width: 50%;
+}
+.info-image img {
+    height: 100%;
+    width: auto;
 }
