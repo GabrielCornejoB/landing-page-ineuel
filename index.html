@@ -124,21 +124,22 @@
         </div>
     </div>
     <div class="pc rating">
-        <div class="form">
+        <form action="" class="form" id="rating-form">
             <div class="title">
                 <h6>CALIFICANOS</h6>
                 <h2>¿Cómo está siendo tu experiencia?</h2>
             </div>
             <div class="stars">
-                <button class="button-star">&#9734;</button>
-                <button class="button-star">&#9734;</button>
-                <button class="button-star">&#9734;</button>
-                <button class="button-star">&#9734;</button>
-                <button class="button-star">&#9734;</button>
+                <button type="button" class="button-star">&#9734;</button>
+                <button type="button" class="button-star">&#9734;</button>
+                <button type="button" class="button-star">&#9734;</button>
+                <button type="button" class="button-star">&#9734;</button>
+                <button type="button" class="button-star">&#9734;</button>
             </div>
+            <input type="text" id="rating" style="display: none" value="">
             <textarea name="opinion" id="opinion" rows="5" placeholder="Compartenos tu opinión :)" required></textarea>
-            <button onclick="send()" type="submit" class="submit-button">ENVIAR</button>
-        </div>
+            <button type="submit" class="submit-button">ENVIAR</button>
+        </form>
     </div>
     <script>
         const stars = document.querySelectorAll(".button-star");
@@ -146,6 +147,7 @@
         stars.forEach((star, i) => {
             star.onclick = function() {
                 current = i+1;
+                document.getElementById('rating').value = current;
                 stars.forEach((star, j) => {
                     if (current >= j+1) {
                         star.innerHTML = '&#9733;';
@@ -156,12 +158,9 @@
                 });
             }
         });
-        function send() {
-            let text = document.getElementById('opinion').value;
-            alert("Calificación: " + current + "\nMensaje: " + text);
-            document.getElementById('opinion').value = "";
-        }
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./js/firebase.js"></script>
     <footer>
 
     </footer>
